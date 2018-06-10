@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
 
-import logging
 import godaddypy
-import requests
 import json
+import logging
+import requests
 
 from settings import *
 from settings_local import *
