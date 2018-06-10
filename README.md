@@ -5,13 +5,22 @@ updates GoDaddy DNS records automatically
 create a `settings_local.py`` file:
 
 ```python
-GODADDY_PUBLIC_KEY = 'xxx'
-GODADDY_SECRET_KEY = 'xxx'
+# credentials (https://developer.godaddy.com/keys/)
+GODADDY_PUBLIC_KEY = ''
+GODADDY_SECRET_KEY = ''
 
-DOMAINS = {
-    'example.com': [
-        '@', # domain itself
-        'foo' # subdomain
-    ]
-}
+# domains
+# {
+#     'example.com': [
+#         '@', # domain itself
+#         'foo' # subdomain
+#     ]
+# }
+DOMAINS = {}
+
+# time to live (optional)
+DOMAIN_TTL = 600
+
+# log-file (optional)
+LOG_FILE = 'godaddy.log'
 ```
