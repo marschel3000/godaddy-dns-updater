@@ -102,3 +102,21 @@ venv.bak/
 
 # mypy
 .mypy_cache/
+
+
+*.directory
+*.swp
+*~
+.DS_Store
+
+# sublime project-files
+*.sublime-project
+*.sublime-workspace
+
+# vscode project
+*.code-workspace
+.vscode/*
+!.vscode/templates
+
+
+settings_local.py
