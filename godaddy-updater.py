@@ -48,7 +48,7 @@ for domain, subdomains in DOMAINS.items():
 
     for new in new_records:
         current = list(filter(lambda r: r['name'] == new['name'] and r['type'] == new['type'], current_records))
-        if not current or new != current[0]:
+        if not current or new['data'] != current[0]['data']:
             try:
                 if not current:
                     client.add_record(domain, new)
