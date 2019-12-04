@@ -42,7 +42,7 @@ for domain, subdomains in DOMAINS.items():
         if ipv4:
             new_records.append({'data': ipv4, 'name': subdomain, 'ttl': DOMAIN_TTL, 'type': 'A'})
         if ipv6:
-            new_records.append({'data': ipv6, 'name': subdomain, 'ttl': DOMAIN_TTL, 'type': 'AAA'})
+            new_records.append({'data': ipv6, 'name': subdomain, 'ttl': DOMAIN_TTL, 'type': 'AAAA'})
 
     current_records = client.get_records(domain)
 
